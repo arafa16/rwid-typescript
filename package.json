@@ -16,7 +16,8 @@
     "test": "vitest run",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx}\""
+    "format": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx}\"",
+    "coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",
