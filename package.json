@@ -13,8 +13,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "vitest run",
     "preview": "vite preview",
-    "test": "vitest run"
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx}\""
   },
   "repository": {
     "type": "git",
