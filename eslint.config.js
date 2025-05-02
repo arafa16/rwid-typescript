@@ -21,8 +21,8 @@ export default defineConfig([
         "eslint:recommended",
         "plugin:import/recommended",
         "plugin:@typescript-eslint/recommended",
-        "eslint-config-prettier"
-      )
+        "eslint-config-prettier",
+      ),
     ),
 
     settings: {
