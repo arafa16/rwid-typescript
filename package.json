@@ -1,0 +1,46 @@
+{
+  "name": "rwid-typescript",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Learn TypeScript from basic.",
+  "engineStrict": true,
+  "engines": {
+    "node": "22.x",
+    "pnpm": "10.8.1"
+  },
+  "packageManager": "pnpm@10.8.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arafa16/rwid-typescript.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Learning",
+    "RWID"
+  ],
+  "author": {
+     "name": "Ara Fa Adri",
+     "email": "arafa.ocs@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/arafa16/rwid-typescript/issues"
+  },
+  "homepage": "https://github.com/arafa16/rwid-typescript#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.31.1",
+    "vite": "^6.3.1",
+    "vitest": "^3.1.2"
+  }
+}
