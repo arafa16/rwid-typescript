@@ -2,8 +2,10 @@
 
 [![License](https://badgen.net/github/license/arafa16/rwid-typescript "License")](LICENSE.md)
 [![Release](https://badgen.net/github/release/arafa16/rwid-typescript "Release")](https://github.com/arafa16/rwid-typescript/releases)
+[![Test Status](https://github.com/arafa16/rwid-typescript/actions/workflows/main.yml/badge.svg "Test Status")](https://github.com/arafa16/rwid-typescript/actions/workflows/main.yml)
+[![Coverage Status](https://codecov.io/github/arafa16/rwid-typescript/graph/badge.svg?token=IG5MQONGO8 "Coverage Status")](https://codecov.io/github/arafa16/rwid-typescript)
 
-Learn TypeScript from basic.
+Learn TypeScript.
 
 ## Table of Contents
 
