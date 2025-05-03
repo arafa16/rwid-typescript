@@ -8,6 +8,7 @@ on:
 
 env:
   NODE_VERSION: 22.14.0
+  PNPM_VERSION: 10.8.1
 
 jobs:
   test:
@@ -20,7 +21,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10.8.1
+          version: ${{ env.PNPM_VERSION }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -38,3 +39,30 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: arafa16/rwid-typescript
+      
+      - name: Build
+        run: pnpm run build
+        env:
+          VITE_ASSET_URL: ${{ secrets.VITE_ASSET_URL }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    needs: test
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
