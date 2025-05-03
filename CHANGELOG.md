@@ -1,4 +1,6 @@
-## [Unreleased](https://github.com/arafa16/rwid-typescript/compare/0.1.0...develop)
+## [Unreleased](https://github.com/arafa16/rwid-typescript/compare/0.2.0...develop)
+
+## [0.2.0](https://github.com/arafa16/rwid-typescript/releases/tag/0.2.0) - 2025-05-03
 
 ## [0.1.0](https://github.com/arafa16/rwid-typescript/releases/tag/0.1.0) - 2025-05-02
 
